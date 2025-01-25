@@ -12,7 +12,7 @@ export default function Footer(){
                     <div className="grid lg:grid-cols-12 md:grid-cols-3 grid-cols-1 items-center">
                         <div className="lg:col-span-3 md:text-start text-center">
                             <Link href="#" className="text-[22px] focus:outline-none">
-                                <Image src='/images/logo-white.png' width={111} height={22} className="mx-auto md:me-auto md:ms-0" alt=""/>
+                                <Image src={`/images/logo-white.png`} width={111} height={22} className="mx-auto md:me-auto md:ms-0 object-contain" alt=""/>
                             </Link>
                         </div>
 

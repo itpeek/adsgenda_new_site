@@ -38,10 +38,10 @@ export default function NavLight(){
                 <div className="container relative flex flex-wrap items-center justify-between">
                     <Link className="navbar-brand md:me-8" href="/">
                         <span className="inline-block dark:hidden">
-                            <Image src='/images/logo-color.png' width={75} height={22} className="l-dark" alt=""/>
-                            <Image src='/images/logo-white.png' width={75} height={22} className="l-light" alt=""/>
+                            <Image src='/images/logo-color.png' width={75} height={22} className="l-dark object-contain" alt=""/>
+                            <Image src='/images/logo-white.png' width={75} height={22} className="l-light object-contain" alt=""/>
                         </span> 
-                        <Image src='/images/logo-white.png' width={75} height={22} className="hidden dark:inline-block" alt=""/>
+                        <Image src='/images/logo-white.png' width={75} height={22} className="hidden dark:inline-block object-contain" alt=""/>
                     </Link>
 
                     <div className="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
