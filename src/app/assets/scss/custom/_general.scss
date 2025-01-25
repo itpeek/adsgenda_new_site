@@ -2,10 +2,10 @@
 /*             General           */
 /*===============================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;600;700&display=swap');
 
 html{
-    font-family: 'Libre Franklin', sans-serif !important;
+    font-family: 'Noto Sans Thai', sans-serif !important;
 }
 html {
     @apply scroll-smooth;
@@ -16,9 +16,9 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    @apply font-libre_franklin;
+    @apply font-noto_sans_thai;
 }
 
 p {
-    @apply leading-relaxed font-libre_franklin;
+    @apply leading-relaxed font-noto_sans_thai;
 }

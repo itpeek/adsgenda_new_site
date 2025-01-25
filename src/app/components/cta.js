@@ -25,7 +25,7 @@ export default function Cta(){
                                 channel="youtube"
                                 youtube={{ mute: 0, autoplay: 0 }}
                                 isOpen={isOpen}
-                                videoId="S_CGed6E610"
+                                videoId="zrgm-n_6Ygg"
                                 onClose={() => setOpen(false)} 
                             />
                         </div>
@@ -36,14 +36,14 @@ export default function Cta(){
                                 <div className="grid md:grid-cols-2 grid-cols-1 items-center">
                                     <div className="mt-8">
                                         <div className="section-title text-md-start">
-                                            <h6 className="text-white/70 text-sm font-semibold uppercase">Get Free Trial</h6>
-                                            <h3 className="font-semibold text-2xl leading-normal text-white mt-2">Get An Easy Start <br/> With Upcover Now</h3>
+                                            <h6 className="text-white/70 text-sm font-semibold uppercase">Free Consult</h6>
+                                            <h3 className="font-semibold text-2xl leading-normal text-white mt-2">Easy Start With<br/>Adsgenda Now</h3>
                                         </div>
                                     </div>
 
                                     <div className="mt-8">
                                         <div className="section-title text-md-start">
-                                            <p className="text-white/70 max-w-xl mx-auto mb-2">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                                            <p className="text-white/70 max-w-xl mx-auto mb-2">ให้ธุรกิจของคุณเติบโตอย่างมั่นคง รวดเร็ว ทันสมัย ตามทันยุคใหม่ ให้บริการด้วยทีมงานมืออาชีพประสบการณ์มากกว่า 17 ปี</p>
                                             <Link href="" className="text-white">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
                                         </div>
                                     </div>
@@ -55,7 +55,7 @@ export default function Cta(){
             </div>
         </div>
         
-        <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-teal-400 to-teal-500"></div>
+        <div className="absolute bottom-0 start-0 end-0 sm:h-2/3 h-4/5 bg-gradient-to-b from-ads-secondary/50 to-ads-secondary/100"></div>
     </section>
     )
 }

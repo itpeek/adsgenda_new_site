@@ -2,20 +2,20 @@
 /*             Menu              */
 /*===============================*/
 .navbar {
-    @apply fixed top-0 left-0 right-0 z-999 bg-transparent py-3 transition-all duration-500 font-libre_franklin;
+    @apply top-0 left-0 right-0 z-999 py-3 py-3 transition-all duration-500 font-noto_sans_thai;
     .navigation {
         @apply w-full m-0;
         .navbar-nav {
             @apply mt-4 flex flex-row overflow-y-scroll h-24;
             .nav-link {
-                @apply block p-3 text-[12px] uppercase text-black tracking-wider hover:text-teal-500 dark:text-white/60 dark:hover:text-white font-medium;
+                @apply block p-3 text-[12px] uppercase text-black tracking-wider hover:text-ads-primary dark:text-white/60 dark:hover:text-white font-medium;
                 &.active{
-                    @apply text-teal-500 dark:text-white;
+                    @apply text-ads-primary dark:text-white;
                 }
             }
             .active {
                 .nav-link {
-                    @apply text-teal-500 dark:text-white;
+                    @apply text-ads-primary dark:text-white;
                 }
             }
         }
@@ -110,7 +110,7 @@
                 .nav-link {
                     @apply border-0 hover:bg-transparent;
                     &.active{
-                        @apply text-teal-500;
+                        @apply text-ads-primary;
                     }
                 }
 
@@ -141,25 +141,25 @@
                 .nav-link {
                     @apply text-black dark:text-white/60;
                     &.active{
-                        @apply text-teal-500;
+                        @apply text-ads-primary;
                     }
                 }
                 .active {
                     .nav-link {
-                        @apply text-teal-500;
+                        @apply text-ads-primary;
                     }
                 }
 
                 &.nav-light {
                     .nav-link {
-                        @apply text-black hover:text-teal-500 dark:text-white/60 dark:hover:text-white;
+                        @apply text-black hover:text-ads-primary dark:text-white/60 dark:hover:text-white;
                         &.active{
-                            @apply text-teal-500 dark:text-white;
+                            @apply text-ads-primary dark:text-white;
                         }
                     }
                     .active {
                         .nav-link {
-                            @apply text-teal-500 dark:text-white;
+                            @apply text-ads-primary dark:text-white;
                         }
                     }
                 }
@@ -177,12 +177,12 @@
                 .nav-link {
                     @apply text-black;
                     &.active{
-                        @apply text-teal-500;
+                        @apply text-ads-primary;
                     }
                 }
                 .active {
                     .nav-link {
-                        @apply text-teal-500;
+                        @apply text-ads-primary;
                     }
                 }
                 .menu-social {

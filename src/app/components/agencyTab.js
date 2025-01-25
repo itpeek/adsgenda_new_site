@@ -11,7 +11,7 @@ export default function AgencyTab(){
                 <div className="grid grid-cols-1 pb-6 text-center">
                     <h3 className="font-semibold text-2xl leading-normal mb-4">A Performance-driven Marketing Agency</h3>
 
-                    <p className="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+                    <p className="text-slate-400 max-w-xl mx-auto">We specialize in delivering measurable results through data-driven strategies, in-depth analytics, and innovative campaigns. Our focus is on maximizing ROI and helping your business achieve its goals efficiently and effectively.</p>
                 </div>
 
                 <div className="grid md:grid-cols-12 grid-cols-1 mt-6 gap-6">
@@ -19,24 +19,24 @@ export default function AgencyTab(){
                         <div className="sticky top-20">
                             <ul className="flex-column p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
                                 <li role="presentation">
-                                    <button className={`px-4 py-2 text-start text-base font-medium rounded-md w-full hover:text-teal-500 duration-500 ${activeIndex === 1 ? 'text-white bg-teal-500 hover:text-white' : ''}`} onClick={() => setActiveIndex(1)}>
+                                    <button className={`px-4 py-2 text-start text-base font-medium rounded-md w-full hover:text-ads-primary duration-500 ${activeIndex === 1 ? 'text-white bg-ads-primary hover:text-white' : ''}`} onClick={() => setActiveIndex(1)}>
                                         <span className="block">Step 1</span>
                                         <span className="text-lg mt-2 block">SEO Audit</span>
-                                        <span className="block mt-2">We offer flexible and comprehensive online marketing plans</span>
+                                        <span className={`block mt-2 font-normal duration-500 ${activeIndex === 1 ? 'text-white hover:text-white' : 'text-slate-400'}`}>We offer flexible and comprehensive online marketing plans</span>
                                     </button>
                                 </li>
                                 <li role="presentation">
-                                    <button className={`px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 hover:text-teal-500 duration-500 ${activeIndex === 2 ? 'text-white bg-teal-500 hover:text-white' : ''}`} onClick={() => setActiveIndex(2)}>
+                                    <button className={`px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 hover:text-ads-primary duration-500 ${activeIndex === 2 ? 'text-white bg-ads-primary hover:text-white' : ''}`} onClick={() => setActiveIndex(2)}>
                                         <span className="block">Step 2</span>
                                         <span className="text-lg mt-2 block">Project Execution</span>
-                                        <span className="block mt-2">We offer flexible and comprehensive online marketing plans</span>
+                                        <span className={`block mt-2 font-normal duration-500 ${activeIndex === 2 ? 'text-white hover:text-white' : 'text-slate-400'}`}>We offer flexible and comprehensive online marketing plans</span>
                                     </button>
                                 </li>
                                 <li role="presentation">
-                                    <button className={`px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 hover:text-teal-500 duration-500 ${activeIndex === 3 ? 'text-white bg-teal-500 hover:text-white' : ''}`} onClick={() => setActiveIndex(3)}>
+                                    <button className={`px-4 py-2 text-start text-base font-medium rounded-md w-full mt-6 hover:text-ads-primary duration-500 ${activeIndex === 3 ? 'text-white bg-ads-primary hover:text-white' : ''}`} onClick={() => setActiveIndex(3)}>
                                         <span className="block">Step 3</span>
                                         <span className="text-lg mt-2 block">Results & Reporting</span>
-                                        <span className="block mt-2">We offer flexible and comprehensive online marketing plans</span>
+                                        <span className={`block mt-2 font-normal duration-500 ${activeIndex === 3 ? 'text-white hover:text-white' : 'text-slate-400'}`}>We offer flexible and comprehensive online marketing plans</span>
                                     </button>
                                 </li>
                             </ul>

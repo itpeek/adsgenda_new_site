@@ -11,6 +11,7 @@ import Blogs from '../components/blog'
 import GetInTouch from '../components/getInTuoch'
 import Footer from '../components/footer'
 import Switcher from '../components/switcher'
+import stickyLineCta from '../components/lineCtaSticky'
 
 export default function IndexFive(){
     return(

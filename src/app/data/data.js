@@ -1,46 +1,47 @@
-import { FiTrendingUp, FiDollarSign, FiCompass,FiCommand, FiBox, FiCamera, FiBell, FiMonitor } from '../assets/icons/vander'
+import { FiCommand, FiBox, CgWebsite, FiBell, FiMonitor, BsCameraReels, GoGoal ,AiOutlineNotification   } from '../assets/icons/vander'
 
 export const servicesData = [
     {
-        icon:FiTrendingUp,
-        title:'Grow Your Business',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        icon:GoGoal,
+        title:'Event Activity & Booth Exhibition',
+        desc:'การจัดกิจกรรมและบูธแสดงสินค้า ที่มุ่งเน้นสร้างความน่าสนใจ ดึงดูดกลุ่มเป้าหมาย พร้อมทั้งสื่อสารและสร้างการจดจำแบรนด์ได้อย่างมีประสิทธิภาพ'
     },
     {
-        icon:FiDollarSign,
-        title:'Drive More Sales',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        icon:BsCameraReels,
+        title:'Production House',
+        desc:'ให้บริการผลิต Video Presentation งานคุณภาพจากทีมงานที่มีประสบการณ์ระดับประเทศ พร้อมให้คำปรึกษาอย่างมืออาชีพ'
     },
     {
-        icon:FiCompass,
-        title:'Handled By Expert',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        icon:AiOutlineNotification ,
+        title:'Online Marketing',
+        desc:'ทำการตลาดผ่านช่องทางออนไลน์ เพื่อเข้าถึงกลุ่มเป้าหมายได้อย่างตรงจุด ด้วยกลยุทธ์ที่หลากหลาย เพื่อเพิ่มการมองเห็นและสร้างยอดขายให้กับธุรกิจ'
     },
     {
         icon:FiCommand,
-        title:'Discussion For Idea',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        title:'Consultant',
+        desc:'ที่ปรึกษาทางการตลาด เพื่อสร้างสรรค์โซลูชันที่ตอบโจทย์และค้นหาโอกาสใหม่ ๆ ในการพัฒนาและแก้ไขปัญหาอย่างสร้างสรรค์'
     },
     {
         icon:FiBox,
-        title:'Web Design',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        title:'Website UX/UI',
+        desc:'การออกแบบประสบการณ์และอินเทอร์เฟซเว็บไซต์ เพื่อให้ผู้ใช้งานได้รับประสบการณ์ที่ดีและตอบโจทย์ความต้องการอย่างลงตัว'
     },
     {
-        icon:FiCamera,
-        title:'Network Security',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+        icon:CgWebsite ,
+        title:'Web Development',
+        desc:'การออกแบบประสบการณ์และส่วนติดต่อผู้ใช้บนเว็บไซต์ เพื่อให้ใช้งานง่าย และสร้างความประทับใจผ่านดีไซน์ที่สวยงาม'
+
     },
-    {
-        icon:FiBell,
-        title:'Social Media',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
-    },
-    {
-        icon:FiMonitor,
-        title:'Design & Branding',
-        desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
-    },
+    // {
+    //     icon:FiBell,
+    //     title:'Social Media',
+    //     desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+    // },
+    // {
+    //     icon:FiMonitor,
+    //     title:'Design & Branding',
+    //     desc:'If the distribution of letters and words is random, the reader will not be distracted from making.'
+    // },
 ]
 
 export const clientData = [

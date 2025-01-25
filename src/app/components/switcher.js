@@ -1,7 +1,7 @@
 'use client'
 import React,{useState, useEffect} from "react";
 import Link from "next/link";
-import {FiSun, FiMoon} from '../assets/icons/vander'
+import {FiSun, FiMoon, IoIosArrowUp} from '../assets/icons/vander'
 
 export default function Switcher(){
     let [scroll, setScroll] = useState(false);
@@ -26,15 +26,15 @@ export default function Switcher(){
             }
     }
 
-    let modeChange = (e) =>{
-        const htmlTag = document.getElementsByTagName("html")[0]
-        if(e.target.innerText === "LTR"){
-            htmlTag.dir = "ltr"
-        }
-        else{
-            htmlTag.dir = "rtl"
-        }
-    }
+    // let modeChange = (e) =>{
+    //     const htmlTag = document.getElementsByTagName("html")[0]
+    //     if(e.target.innerText === "LTR"){
+    //         htmlTag.dir = "ltr"
+    //     }
+    //     else{
+    //         htmlTag.dir = "rtl"
+    //     }
+    // }
 
 
     let scrollTop = () =>{
@@ -46,7 +46,7 @@ export default function Switcher(){
 
     return(
         <>
-         <Link href="#" onClick={()=>scrollTop()} id="back-to-top" className={`back-to-top fixed text-lg rounded-full z-10 bottom-5 right-5 size-9 text-center bg-teal-500 text-white leading-9 ${scroll ? 'block' : 'hidden' }`}><i className="mdi mdi-arrow-up"></i></Link>
+         <Link href="#" onClick={()=>scrollTop()} id="back-to-top" className={`back-to-top fixed text-lg rounded-full z-10 bottom-5 right-5 size-9 text-center bg-ads-primary hover:bg-ads-secondary text-white leading-9 ${scroll ? 'block' : 'hidden' }`}><IoIosArrowUp className="size-6 mx-[6px] my-1"/></Link>
 
         <div className="fixed top-1/4 -right-1 z-3">
             <span className="relative inline-block rotate-90">
@@ -59,12 +59,12 @@ export default function Switcher(){
             </span>
         </div>
 
-        <div className="fixed top-[40%] -right-3 z-50">
+        {/* <div className="fixed top-[40%] -right-3 z-50">
             <Link href="" id="switchRtl">
                 <span className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-medium rtl:block ltr:hidden" onClick={(e)=>modeChange(e)}>LTR</span>
                 <span className="py-1 px-3 relative inline-block rounded-t-md -rotate-90 bg-white dark:bg-slate-900 shadow-md dark:shadow dark:shadow-gray-800 font-medium ltr:block rtl:hidden" onClick={(e)=>modeChange(e)}>RTL</span>
             </Link>
-        </div>
+        </div> */}
         </>
     )
 }

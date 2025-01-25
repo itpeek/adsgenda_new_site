@@ -1,12 +1,12 @@
-import { Libre_Franklin } from "next/font/google";
+import { Noto_Sans_Thai } from "next/font/google";
 import "./globals.css";
-import './assets/css/materialdesignicons.min.css'
 import './assets/scss/tailwind.scss'
 
-const libre_franklin = Libre_Franklin({
-   subsets: ["latin"],
+const noto_sans_thai = Noto_Sans_Thai({
+   subsets : ['thai'],
    weight: ['400', '700','300','500','600','700'],
-   variable: '--font-libre_franklin',
+   display: "swap",   
+   variable: '--font-noto_sans_thai',
    });
 
 export const metadata = {
@@ -17,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light scroll-smooth" dir="ltr">
-      <body className={`${libre_franklin.variable} font-libre_franklin text-base text-black dark:text-white bg-white dark:bg-slate-900`}>{children}</body>
+      <body className={`${noto_sans_thai.variable} font-noto_sans_thai text-base text-black dark:text-white bg-white dark:bg-slate-900`}>{children}</body>
     </html>
   );
 }

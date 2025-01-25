@@ -1,7 +1,7 @@
 'use client'
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
+import LineCta from "./lineCta";
 
 import CountUp from 'react-countup';
 
@@ -17,7 +17,7 @@ export default function About(){
 
                                 <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 mx-auto size-56 flex justify-center items-center bg-white dark:bg-slate-900 rounded-full shadow dark:shadow-gray-700">
                                     <div className="text-center">
-                                        <span className="text-teal-500 text-2xl font-semibold mb-0 block"><CountUp className="counter-value text-6xl font-semibold" start={0} end={15}/>+</span>
+                                        <span className="text-ads-primary text-2xl font-semibold mb-0 block"><CountUp className="counter-value text-6xl font-semibold" start={0} end={17}/>+</span>
                                         <span className="font-semibold block mt-2">Years <br/> Experience</span>
                                     </div>
                                 </div>
@@ -28,11 +28,10 @@ export default function About(){
                     <div className="md:col-span-6">
                         <div className="lg:ms-8">
                             <h6 className="text-teal-500 text-sm font-semibold uppercase mb-2">Who Are We ?</h6>
-                            <h3 className="font-semibold text-2xl leading-normal mb-4">We're a global stakeholder <br/> relations and partnership <br/> building consultancy.</h3>
+                            <h3 className="font-semibold text-xl leading-normal mb-4">We're a Digital Masters <br/> Your One-Stop Digital Solution</h3>
 
-                            <p className="text-slate-400 max-w-xl mb-6">Get instant helpful resources about anything on the go, easily implement secure money transfer solutions, boost your daily efficiency, connect to other app users and create your own Techwind network, and much more with just a few taps. commodo consequat. Duis aute irure.</p>
-
-                            <Link href="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Read More <i className="mdi mdi-chevron-right align-middle ms-0.5"></i></Link>
+                            <p className="text-slate-400 max-w-xl mb-6">We provide expert services to build, grow, and elevate your digital presence. From design and development to strategic marketing, we deliver tailored solutions to meet all your digital needs.</p>
+                            <LineCta href="https://line.me" text="ติดต่อเรา" fontSize="text-xl" />
                         </div>
                     </div>
                 </div>
