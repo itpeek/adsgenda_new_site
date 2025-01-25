@@ -1,0 +1,24 @@
+/*********************************/
+/*             General           */
+/*===============================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700&display=swap');
+
+html{
+    font-family: 'Libre Franklin', sans-serif !important;
+}
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    @apply text-[15px] text-black;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    @apply font-libre_franklin;
+}
+
+p {
+    @apply leading-relaxed font-libre_franklin;
+}
