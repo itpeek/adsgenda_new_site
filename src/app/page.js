@@ -13,12 +13,10 @@ import GetInTouch from "./components/getInTuoch";
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
 import LineCtaSticky from "./components/lineCtaSticky";
-import { LoadingBarContainer } from "react-top-loading-bar";
 
 export default function IndexSeven(){
     return(
         <>
-        <LoadingBarContainer>
             <NavLight/>
             <HeroCarousel/>
             <About/>
@@ -32,7 +30,6 @@ export default function IndexSeven(){
             <Footer/>
             <Switcher/>
             <LineCtaSticky/>
-        </LoadingBarContainer>
         </>
     )
 }
