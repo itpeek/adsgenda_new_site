@@ -11,16 +11,17 @@ import 'tiny-slider/dist/tiny-slider.css';
 export default function Client(){
     const settings = {
         container: '.tiny-three-item',
-        controls: false,
+        controls: true,
         mouseDrag: true,
         loop: true,
         rewind: true,
         autoplay: true,
         autoplayButtonOutput: false,
+        controlsText: ['<span class="fas fa-chevron-circle-left"></span>', '<span class="fas fa-chevron-circle-right"></span>'],        
         autoplayTimeout: 3000,
         navPosition: "bottom",
         speed: 400,
-        gutter: 12,
+        gutter: 12,    
         responsive: {
             992: {
                 items: 3
