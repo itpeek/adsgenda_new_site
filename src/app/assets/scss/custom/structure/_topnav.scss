@@ -8,9 +8,9 @@
         .navbar-nav {
             @apply mt-4 flex flex-row overflow-y-scroll h-24;
             .nav-link {
-                @apply block p-3 text-[12px] uppercase text-black tracking-wider hover:text-ads-primary dark:text-white/60 dark:hover:text-white font-medium;
+                @apply block p-3 text-[12px] uppercase text-black tracking-wider hover:text-ads-primary dark:text-white/60 dark:hover:text-white font-medium cursor-pointer;
                 &.active{
-                    @apply text-ads-primary dark:text-white;
+                    @apply text-ads-primary dark:text-white cursor-default;
                 }
             }
             .active {
@@ -154,7 +154,7 @@
                     .nav-link {
                         @apply text-black hover:text-ads-primary dark:text-white/60 dark:hover:text-white;
                         &.active{
-                            @apply text-ads-primary dark:text-white;
+                            @apply text-ads-primary dark:text-white cursor-default;
                         }
                     }
                     .active {

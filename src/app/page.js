@@ -1,3 +1,4 @@
+'use client'
 import React from "react"
 import NavLight from "./components/navLight"
 import HeroCarousel from "./components/heroCarousel";
@@ -12,23 +13,26 @@ import GetInTouch from "./components/getInTuoch";
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
 import LineCtaSticky from "./components/lineCtaSticky";
+import { LoadingBarContainer } from "react-top-loading-bar";
 
 export default function IndexSeven(){
     return(
         <>
-        <NavLight/>
-        <HeroCarousel/>
-        <About/>
-        <Services/>
-        <AgencyTab/>
-        <Cta/>
-        <Client/>
-        <Pricing/>
-        <Blogs/>
-        <GetInTouch/>
-        <Footer/>
-        <Switcher/>
-        <LineCtaSticky/>
+        <LoadingBarContainer>
+            <NavLight/>
+            <HeroCarousel/>
+            <About/>
+            <Services/>
+            <AgencyTab/>
+            <Cta/>
+            <Client/>
+            <Pricing/>
+            <Blogs/>
+            <GetInTouch/>
+            <Footer/>
+            <Switcher/>
+            <LineCtaSticky/>
+        </LoadingBarContainer>
         </>
     )
 }
