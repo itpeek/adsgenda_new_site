@@ -31,7 +31,6 @@ export default function IndexSeven(){
             <Footer/>
             <Switcher/>
             <LineCtaSticky/>
-            <LogosCarousel/>
         </>
     )
 }
