@@ -13,6 +13,7 @@ import GetInTouch from "./components/getInTuoch";
 import Footer from "./components/footer";
 import Switcher from "./components/switcher";
 import LineCtaSticky from "./components/lineCtaSticky";
+import LogosCarousel from "./components/logoscarousel";
 
 export default function IndexSeven(){
     return(
@@ -30,6 +31,7 @@ export default function IndexSeven(){
             <Footer/>
             <Switcher/>
             <LineCtaSticky/>
+            <LogosCarousel/>
         </>
     )
 }
