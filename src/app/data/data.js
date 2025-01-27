@@ -104,4 +104,52 @@ export const blogData = [
     },
 ]
 
+export const customerData = [
+    {
+        image:'/images/customer/1.png'
+    },
+    {
+        image:'/images/customer/2.png'
+    },
+    {
+        image:'/images/customer/3.png'
+    },
+    {
+        image:'/images/customer/4.png'
+    },
+    {
+        image:'/images/customer/5.png'
+    },
+    {
+        image:'/images/customer/6.png'
+    },
+    {
+        image:'/images/customer/7.png'
+    },
+    {
+        image:'/images/customer/8.png'
+    },
+    {
+        image:'/images/customer/9.png'
+    },
+    {
+        image:'/images/customer/10.png'
+    },
+    {
+        image:'/images/customer/11.png'
+    },
+    {
+        image:'/images/customer/12.png'
+    },
+    {
+        image:'/images/customer/13.png'
+    },
+    {
+        image:'/images/customer/14.png'
+    },
+    {
+        image:'/images/customer/15.png'
+    },
+]
+
 export const companyLogo = ['/images/team/amazon.svg', '/images/team/google.svg', '/images/team/lenovo.svg', '/images/team/paypal.svg', '/images/team/shopify.svg', '/images/team/spotify.svg']
