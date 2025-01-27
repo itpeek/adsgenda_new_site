@@ -17,7 +17,20 @@ export default function Cta(){
                 <div className="relative z-1">
                     <div className="grid grid-cols-1 md:text-start text-center justify-center">
                         <div className="relative">
-
+                            <img src='/images/home.png' alt=""/>
+                            <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
+                                <Link href="" scroll={false} onClick={() => setOpen(true)}
+                                    className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-700 inline-flex items-center justify-center bg-white dark:bg-ads-secondary text-ads-secondary dark:text-white">
+                                    <FaPlayCircle className="size-14" />
+                                </Link>
+                            </div>
+                            <ModalVideo
+                                channel="youtube"
+                                youtube={{ mute: 0, autoplay: 0 }}
+                                isOpen={isOpen}
+                                videoId="zrgm-n_6Ygg"
+                                onClose={() => setOpen(false)} 
+                            />
                         </div>
                     </div>
                     <div className="content md:mt-8">
