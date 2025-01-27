@@ -19,7 +19,7 @@ export default function Cta(){
                         <div className="relative">
                             <img src='/images/home.png' alt=""/>
                             <div className="absolute bottom-2/4 translate-y-2/4 start-0 end-0 text-center">
-                                <Link href="#!" scroll={false} onClick={() => setOpen(true)}
+                                <Link href="" scroll={false} onClick={() => setOpen(true)}
                                     className="lightbox size-20 rounded-full shadow-lg dark:shadow-gray-700 inline-flex items-center justify-center bg-white dark:bg-ads-secondary text-ads-secondary dark:text-white">
                                     <FaPlayCircle className="size-14" />
                                 </Link>
