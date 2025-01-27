@@ -10,8 +10,8 @@ const noto_sans_thai = Noto_Sans_Thai({
    });
 
 export const metadata = {
-  title: "Upcover - Next js Business Landing Page Template",
-  description: "Next js Business Landing Page Template",
+  title: "Adsgenda - รับทำการตลาด รับทำการตลาดออนไลน์ ครบวงจร",
+  description: "บริษัทรับการตลาดครบวงจรเจ้าเดียวที่มีบริการ Online & Onground เราคือมืออาชีพประสบการณ์ระดับประเทศ Digital Marketing Agency ครบทีมที่ช่วยคุณสู่เป้าหมายที่ท้าทาย",
 };
 
 export default function RootLayout({ children }) {
