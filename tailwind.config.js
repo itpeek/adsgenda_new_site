@@ -28,6 +28,15 @@ module.exports = {
   
           },
           extend: {
+            animation: {
+                'infinite-scroll': 'infinite-scroll 25s linear infinite',
+            },
+            keyframes: {
+                'infinite-scroll': {
+                    from: { transform: 'translateX(0)' },
+                    to: { transform: 'translateX(-100%)' },
+                }
+            },            
               colors: {
                   'dark': '#3c4858',
                   'black': '#161c2d',
