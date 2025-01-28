@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import dynamic from "next/dynamic";
+import LogosCarousel from "./logoscarousel";
 
 import { clientData } from "../data/data";
 
@@ -44,6 +45,7 @@ export default function Client(){
 
                 <p className="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
             </div>
+            <LogosCarousel/>
 
         </div>
     </section>
