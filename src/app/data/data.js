@@ -133,10 +133,10 @@ export const customerData = [
         image:'/images/customer/9.jpg'
     },
     {
-        image:'/images/customer/10.png'
+        image:'/images/customer/10.jpg'
     },
     {
-        image:'/images/customer/11.jpg'
+        image:'/images/customer/11.png'
     },
     {
         image:'/images/customer/12.jpg'
