@@ -109,46 +109,46 @@ export const customerData = [
         image:'/images/customer/1.png'
     },
     {
-        image:'/images/customer/2.png'
+        image:'/images/customer/2.jpg'
     },
     {
-        image:'/images/customer/3.png'
+        image:'/images/customer/3.jpg'
     },
     {
-        image:'/images/customer/4.png'
+        image:'/images/customer/4.jpg'
     },
     {
-        image:'/images/customer/5.png'
+        image:'/images/customer/5.jpg'
     },
     {
-        image:'/images/customer/6.png'
+        image:'/images/customer/6.jpg'
     },
     {
-        image:'/images/customer/7.png'
+        image:'/images/customer/7.jpg'
     },
     {
-        image:'/images/customer/8.png'
+        image:'/images/customer/8.jpg'
     },
     {
-        image:'/images/customer/9.png'
+        image:'/images/customer/9.jpg'
     },
     {
         image:'/images/customer/10.png'
     },
     {
-        image:'/images/customer/11.png'
+        image:'/images/customer/11.jpg'
     },
     {
-        image:'/images/customer/12.png'
+        image:'/images/customer/12.jpg'
     },
     {
-        image:'/images/customer/13.png'
+        image:'/images/customer/13.jpg'
     },
     {
-        image:'/images/customer/14.png'
+        image:'/images/customer/14.jpg'
     },
     {
-        image:'/images/customer/15.png'
+        image:'/images/customer/15.jpg'
     },
 ]
 
