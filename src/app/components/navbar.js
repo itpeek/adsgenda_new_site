@@ -24,8 +24,8 @@ export default function Navbar(){
         <nav className={`navbar ${scroll ? 'is-sticky' : ''}`} id="navbar">
         <div className="container relative flex flex-wrap items-center justify-between">
             <Link className="navbar-brand md:me-8" href="/">
-                <Image src='/images/logo-color.png' style='width:auto;' width={111} height={22} className="inline-block dark:hidden object-contain" alt=""/>
-                <Image src='/images/logo-white.png' style='width:auto;' width={111} height={22} className="hidden dark:inline-block object-contain" alt=""/>
+                <Image src='/images/logo-color.png' style='width:auto;height:auto' width={111} height={22} className="inline-block dark:hidden object-contain" alt=""/>
+                <Image src='/images/logo-white.png' style='width:auto;height:auto' width={111} height={22} className="hidden dark:inline-block object-contain" alt=""/>
             </Link>
 
             <div className="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">

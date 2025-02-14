@@ -30,7 +30,7 @@ export default function NavLight(){
                     <ul className="lg:col-span-4 list-none md:text-end text-center md:mt-0 space-x-1 ">
                         <li className="inline"><Link href="https://www.facebook.com/adsgenda/" target="_blank" className="text-xs size-9 inline-flex justify-center items-center "><FaFacebook className="text-white size-4 align-middle" title="facebook" /></Link></li>
                         <li className="inline"><Link href="https://line.me/R/ti/p/@352tegsj" target="_blank" className="text-xs size-9 inline-flex justify-center items-center "><FaLine className="text-white size-4 align-middle" title="line"/></Link></li>
-                        <li className="inline"><Link href="mailto:webmaster@adsgenda.com" className="text-xs size-9 inline-flex justify-center items-center "><FiMail className="text-white size-4 align-middle" title="email"/></Link></li>
+                        <li className="inline"><Link href="mailto:webmaster@adsgenda.com" target="_blank" className="text-xs size-9 inline-flex justify-center items-center "><FiMail className="text-white size-4 align-middle" title="email"/></Link></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +47,7 @@ export default function NavLight(){
                     <div className="nav-icons flex items-center lg_992:order-2 ms-auto md:ms-8">
                         <ul className="list-none menu-social mb-0">
                             <li className="inline">
-                                <Link href="" className="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-[#06C755] text-white uppercase hidden lg_992:flex">
+                                <Link href="https://line.me/R/ti/p/@352tegsj" target="_blank" className="h-8 px-4 text-[12px] tracking-wider inline-flex items-center justify-center font-medium rounded-md bg-[#06C755] text-white uppercase hidden lg_992:flex">
                                     <button className="flex gap-1 items-center justify-center text-sm">
                                         <FaLine className="text-xl" />
                                         ติดต่อเรา
