@@ -2,3 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.blog-content p{
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+.blog-content p strong{
+    font-size: 120%;
+}
+.blog-content figure img{
+    margin: 30px auto;
+    text-align: center;
+}
+

@@ -34,7 +34,7 @@ export default function NavLight(){
                     </ul>
                 </div>
             </div>
-            <nav className={`navbar ${scroll ? 'is-sticky fixed' : 'absolute bg-transparent mt-[36px]'}`}>
+            <nav className={`navbar ${scroll ? 'is-sticky fixed' : 'absolute lg:bg-transparent bg-white mt-[36px]'}`}>
                 <div className="container relative flex flex-wrap items-center justify-between">
                     <Link className="navbar-brand md:me-8" href="/">
                         <span className="inline-block dark:hidden">

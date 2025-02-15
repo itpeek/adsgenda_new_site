@@ -1,6 +1,10 @@
 import { Noto_Sans_Thai } from "next/font/google";
 import "./globals.css";
 import './assets/scss/tailwind.scss'
+import NavLight from "./components/navLight";
+import Footer from "./components/footer";
+import Switcher from "./components/switcher";
+import LineCtaSticky from "./components/lineCtaSticky";
 
 const noto_sans_thai = Noto_Sans_Thai({
    subsets : ['thai'],
@@ -17,7 +21,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="light scroll-smooth" dir="ltr">
-      <body className={`${noto_sans_thai.variable} font-noto_sans_thai text-base text-black dark:text-white bg-white dark:bg-slate-900`}>{children}</body>
+      <body className={`${noto_sans_thai.variable} font-noto_sans_thai text-base text-black dark:text-white bg-white dark:bg-slate-900`}>
+        <NavLight/>
+        {children}
+        <Footer/>
+        <Switcher/>
+        <LineCtaSticky/>        
+        </body>
     </html>
   );
 }

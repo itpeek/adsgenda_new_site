@@ -38,9 +38,9 @@ export default function Pricing(){
                         <li className="mb-1 flex"><span>- Landing Page หน้าเดียว</span></li>
                         <li className="mb-1 flex"><span>- พร้อมแบบฟอร์ม (Lead Form)</span></li>
                         <li className="mb-1 flex"><span>- พร้อมติดตั้ง <span className="text-red-600">*</span>{ }Analysis tool</span></li>
-                        <li className="mb-1 flex mt-5"><span className="text-[12px] underline font-bold">เหมาะสำหรับเว็บไซต์หน้าเดียว ที่ต้องการเน้นปิดการขาย<span className="text-[#06C755]">ผ่านไลน์</span> หรือช่องทางอื่นๆ</span></li>
+                        <li className="mb-1 flex mt-5"><span className="text-[12px] font-medium tracking-normal underline">เหมาะสำหรับเว็บไซต์หน้าเดียว ที่ต้องการเน้นปิดการขาย<span className="text-[#06C755]">ผ่านไลน์</span> หรือช่องทางอื่นๆ</span></li>
                     </ul>
-                    <Link href="" className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</Link>
+                    <button className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
                     <p className="text-sm text-slate-400 mt-3"><span className="text-red-600">*</span>GA4, Facebook Pixel, Tiktok Pixel, หรืออื่นๆ</p>
                 </div>
                 <div className="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md h-fit">
@@ -54,33 +54,38 @@ export default function Pricing(){
                         </div>
 
                         <ul className="text-[14px] list-none text-slate-400">
-                        <li className="mb-1 flex"><span>- ออกแบบเว็บไซต์ 5 - 10 หน้า</span></li>
+                        <li className="mb-1 flex"><span>- ออกแบบเว็บไซต์ไม่เกิน 5 หน้า</span></li>
                         <li className="mb-1 flex"><span>- เว็บไซต์รองรับระบบ 2 ภาษา</span></li>
                         <li className="mb-1 flex"><span>- มีระบบหลังบ้านพร้อมใช้งาน</span></li>
                         <li className="mb-1 flex"><span>- พร้อมต่อยอดระบบการขายในอนาคต (E-commerce)</span></li>
                         <li className="mb-1 flex"><span>- พร้อมแบบฟอร์ม (Lead Form)</span></li>
                         <li className="mb-1 flex"><span>- พร้อมติดตั้ง <span className="text-red-600">*</span>{ }Analysis tool</span></li>
+                        <li className="mb-1 flex mt-5"><span className="text-[12px] font-medium tracking-normal underline">เหมาะสำหรับเว็บไซต์บริษัท ที่ต้องการต่อยอดการขายด้วยระบบ E-commerce ในอนาคต</span></li>
                         </ul>
-                        <Link href="" className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</Link>
-
-                        <p className="text-sm text-slate-400 mt-1.5"><span className="text-red-600">*</span>T&C Apply</p>
+                        <button className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
                     </div>
                 </div>                
 
                 <div className="group p-6 relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md h-fit">
-                    <h6 className="font-semibold mb-5 text-xl">Professional Bussiness</h6>
+                    <h6 className="font-semibold mb-5 text-xl">Professional E-Commerce</h6>
 
                     <div className="flex mb-5">
                         <span className="text-lg font-medium">฿</span>
-                        <span className="price text-5xl h6 font-semibold mb-0">29,000</span>
+                        <span className="price text-5xl h6 font-semibold mb-0">59,000</span>
                     </div>
 
                     <ul className="text-[14px] list-none text-slate-400">
-                    <li className="mb-1 flex"><span>- พร้อมแบบฟอร์ม (Lead Form)</span></li>
-                        <li className="mb-1 flex"><span>- พร้อมติดตั้ง <span className="text-red-600">*</span>{ }Analysis tool</span></li>
-                        <li className="mb-1 flex mt-5"><span className="text-[12px] underline font-bold">เหมาะสำหรับเว็บไซต์หน้าเดียว ที่ต้องการเน้นปิดการขาย<span className="text-[#06C755]">ผ่านไลน์</span> หรือช่องทางอื่นๆ</span></li>
+                        <li className="mb-1 flex"><span>- ออกแบบเว็บไซต์ไม่เกิน 10 หน้า</span></li>
+                        <li className="mb-1 flex"><span>- ระบบ <span className="text-red-600">*</span><strong>E-commerce</strong> พร้อมใช้งาน</span></li>
+                        <li className="mb-1 flex"><span>- เว็บไซต์รองรับระบบ 2 ภาษา</span></li>
+                        <li className="mb-1 flex"><span>- มีระบบหลังบ้านพร้อมใช้งาน</span></li>
+                        <li className="mb-1 flex"><span>- พร้อมแบบฟอร์ม (Lead Form)</span></li>
+                        <li className="mb-1 flex"><span>- SEO Research & Settings</span></li>
+                        <li className="mb-1 flex"><span>- พร้อมติดตั้ง Analysis tool</span></li>
+                        <li className="mb-1 flex mt-5"><span className="text-[12px] font-medium tracking-normal underline">เหมาะสำหรับเว็บไซต์บริษัท ที่ต้องการต่อยอดการขายด้วยระบบ E-commerce ในอนาคต</span></li>
                     </ul>
-                    <Link href="" className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</Link>
+                    <button className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
+                    <p className="text-sm text-slate-400 mt-3"><span className="text-red-600">*</span>E-Commerce มาพร้อมระบบชำระเงินพร้อมใช้งาน</p>
                 </div>
 
 
@@ -110,10 +115,16 @@ export default function Pricing(){
                         <ul className="text-[14px] list-none text-slate-400">
                             {finalPrice && (
                             <>
+                            {finalPrice?.pages && (
+                                <>
+                                <li className="mb-1 flex"><span>- ออกแบบเว็บไซต์ {finalPrice.pages} หน้า</span></li>
+                                </>                                
+                            )}
                             {finalPrice?.includeSalesSystem && (
                                 <>
-                                <li className="mb-1 flex"><span>- E-Commerce Website</span></li>
-                                <li className="mb-1 flex"><span>- รองรับระบบ API</span></li>
+                                <li className="mb-1 flex"><span>- ระบบ E-commerce พร้อมใช้งาน</span></li>
+                                <li className="mb-1 flex"><span>- Unique Product Pages</span></li>
+                                <li className="mb-1 flex"><span>- รองรับระบบ <span className="text-red-600">*</span>API</span></li>
                                 </>
                             )}
                             {finalPrice?.needHosting && (
@@ -122,14 +133,23 @@ export default function Pricing(){
                             {finalPrice?.needDomain && (
                                 <li className="mb-1 flex"><span>- Domain {finalPrice.domain} 1 ปี</span></li>
                             )}                                                  
+                            <li className="mb-1 flex"><span>- เว็บไซต์รองรับระบบ 2 ภาษา</span></li>
+                            <li className="mb-1 flex"><span>- มีระบบหลังบ้านพร้อมใช้งาน</span></li>
                             <li className="mb-1 flex"><span>- พร้อมแบบฟอร์ม (Lead Form)</span></li>
+                            <li className="mb-1 flex"><span>- SEO Research & Settings</span></li>
+                            <li className="mb-1 flex"><span>- พร้อมติดตั้ง Analysis tool</span></li>
                             <li className="mb-1 flex"><span>- พร้อมติดตั้ง <span className="text-red-600">*</span>Analysis tool</span></li>
-                            <li className="mb-1 flex"><span>- SEO Research</span></li>
-                            <li className="mb-1 flex"><span>- SEO Setting Onpage</span></li>
+                            <li className="mb-1 flex"><span>- SEO Research & Setting</span></li>
                             </>
                             )}
                         </ul>
-                        <button onClick={handleOpenPopup} className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5 text-[12px]">ปรับแต่งความต้องการคลิกเลย</button>
+                        <button onClick={handleOpenPopup} className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5 text-[12px]">{finalPrice ? ( `ปรับแต่งใหม่` ): ( `ปรับแต่งความต้องการคลิกเลย`)}</button>
+                        {finalPrice && (
+                            <>
+                        <button className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-[#06C755] text-white w-full mt-2 text-[12px]">เลือกแพคเกจนี้</button>
+                        <p className="text-sm text-slate-400 mt-3"><span className="text-red-600">*</span><Link href={`/blog/14985`} className="border-b-2 border-dashed">API คืออะไร ?</Link></p>
+                            </>
+                        )}
                     </div>
                 </div>
             </div>

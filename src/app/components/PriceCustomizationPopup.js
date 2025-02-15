@@ -1,28 +1,30 @@
 import { useState, useEffect } from "react";
 import { CgWebsite } from "react-icons/cg";
 import { GrHost,GrDomain } from "react-icons/gr";
-import { CiShop } from "react-icons/ci";
+import { GiShop } from "react-icons/gi";
+import { IoBusiness } from "react-icons/io5";
+import { IoMdArrowDropright } from "react-icons/io";
 
 const PriceCustomizationPopup = ({ isOpen, onClose, onSave }) => {
-  const [includeSalesSystem, setIncludeSalesSystem] = useState(false);
+  const [selectedPackage, setSelectedPackage] = useState("business"); // แพ็คเกจที่เลือก
   const [needHosting, setNeedHosting] = useState(false);
   const [needDomain, setNeedDomain] = useState(false);
   const [price, setPrice] = useState(0);
-  const [pages, setPages] = useState(3);
+  const [pages, setPages] = useState(5);
   const [domain, setDomain] = useState(""); // State for the domain input
   const [errorMessage, setErrorMessage] = useState(""); // Error message state
 
-  const handleSalesSystemChange = () => {
-    setIncludeSalesSystem((prev) => {
-      // When the sales system is checked, set pages to 10 automatically
-      if (!prev) {
-        setPages(10); // Automatically set to 10 when checked
-      } else {
-        setPages(1); // Reset to the default pages when unchecked
-      }
-      return !prev;
-    });
+  const handlePackageChange = (e) => {
+    setSelectedPackage(e.target.value);
+
+    // อัปเดตจำนวนหน้าตามแพ็กเกจที่เลือก
+    if (e.target.value === "business") {
+      setPages(5);
+    } else if (e.target.value === "ecommerce") {
+      setPages(10);
+    }
   };
+
 
   const handleHostingChange = () => {
     setNeedHosting((prev) => !prev);
@@ -37,16 +39,19 @@ const PriceCustomizationPopup = ({ isOpen, onClose, onSave }) => {
   };
 
   const handleIncrement = () => {
-    if (includeSalesSystem) {
-      // Allow increment only if pages are 10 or more when sales system is included
+
+    if (selectedPackage === "business") {
+      if (pages >= 5) {
+        setPages(pages + 1);
+      }
+    } else if (selectedPackage === "ecommerce") {
       if (pages >= 10) {
         setPages(pages + 1);
       }
     } else {
-
-        setPages(pages + 1);
-
+      setPages(pages + 1);
     }
+
   };
 
   const handleDomainInputChange = (e) => {
@@ -62,20 +67,25 @@ const PriceCustomizationPopup = ({ isOpen, onClose, onSave }) => {
   };
 
   const handleDecrement = () => {
-    if (includeSalesSystem && pages > 10) {
-      setPages(pages - 1); // Allow decrement only if pages are above 10 with sales system
-    } else if (!includeSalesSystem && pages > 1) {
-      setPages(pages - 1); // Allow decrement if pages are more than 1 without sales system
+    if (selectedPackage === "ecommerce" && pages > 10) {
+      setPages(pages - 1); // ถ้าเป็น E-commerce ต้องมีอย่างน้อย 10 หน้า
+    } else if (selectedPackage === "business" && pages > 5) {
+      setPages(pages - 1); // ถ้าเป็น Business Starter ต้องมีอย่างน้อย 5 หน้า
+    } else if (!selectedPackage && pages > 1) {
+      setPages(pages - 1); // ถ้าไม่ได้เลือกแพ็กเกจ ต้องมีอย่างน้อย 1 หน้า
     }
   };
 
   // Calculate the price whenever any option changes
   useEffect(() => {
-    let calculatedPrice = 14200; // Base price
-
-    // If sales system is included, add its cost
-    if (includeSalesSystem) {
-      calculatedPrice += 15000; // Add price for sales system
+    let calculatedPrice = 0;
+    // ตั้งราคาตามแพ็กเกจที่เลือก
+    if (selectedPackage === "business") {
+      calculatedPrice = 25000;
+    } else if (selectedPackage === "ecommerce") {
+      calculatedPrice = 51000;
+    } else {
+      calculatedPrice = 14200; // ราคาเริ่มต้น
     }
 
     // Calculate price based on the number of pages
@@ -97,17 +107,16 @@ const PriceCustomizationPopup = ({ isOpen, onClose, onSave }) => {
     }
 
     setPrice(calculatedPrice);
-  }, [pages, includeSalesSystem, needHosting, needDomain, domain]); // Added domain to dependency array
+  }, [pages, needHosting, needDomain, domain]); // Added domain to dependency array
 
   const handleSave = () => {
     if (needDomain && !domain) {
-      setErrorMessage("กรุณากรอกโดเมน"); // Set error message if domain is missing
+      setErrorMessage("กรุณากรอกโดเมนเพื่อกำหนดราคาได้อย่างถูกต้อง"); // Set error message if domain is missing
       return; // Exit the function if domain is missing
     }
     // Save the price along with checkbox states and domain
     const customizationDetails = {
       price,
-      includeSalesSystem,
       needHosting,
       needDomain,
       domain,
@@ -121,8 +130,9 @@ const PriceCustomizationPopup = ({ isOpen, onClose, onSave }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+    <div className="fixed h-full inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+      <div className="lg:grid lg:grid-cols-12 gap-3 bg-white p-6 rounded-lg shadow-lg w-[800px]">
+      <div className="col-span-5">
         <h2 className="text-xl font-semibold mb-4">Customize Your Website</h2>
 
         <div className="mb-4">
@@ -181,28 +191,53 @@ const PriceCustomizationPopup = ({ isOpen, onClose, onSave }) => {
               </svg>
             </button>
           </div>
-          {includeSalesSystem && (
+          {selectedPackage === "ecommerce" && (
             <p className="text-[12px] text-center mt-2"><span className="text-red-700">*</span> หน้าขั้นต่ำของระบบ E-Commerce คือ 10 หน้า</p>
           )}
-        </div>        
+        </div>  
 
+        {/* Radio เลือกแพ็กเกจ */}
         <div className="mb-4">
-          <label className="block items-center text-sm font-medium text-gray-700 ">
+          <label className="block items-center text-sm font-medium text-gray-700">
             <input
-              type="checkbox"
-              checked={includeSalesSystem}
-              onChange={handleSalesSystemChange}
-              className="hidden peer shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-800 dark:border-neutral-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800"
+              type="radio"
+              value="business"
+              checked={selectedPackage === "business"}
+              onChange={handlePackageChange}
+              className="hidden peer"
             />
-            <span className="flex rounded-md items-center gap-2 p-2 border text-sm text-gray-500 dark:text-neutral-400 peer-checked:text-white peer-checked:bg-ads-secondary peer-checked:border-ads-secondary select-none">
-            < CiShop className="size-6"/>
-             E-Commerce (พร้อมระบบชำระเงิน)
-            </span>           
+            <span className="relative flex rounded-md items-center gap-2 p-2 border text-sm text-gray-500 peer-checked:text-white peer-checked:bg-ads-secondary peer-checked:border-ads-secondary select-none">
+              <IoBusiness className="size-6" />
+              Business Starter
+              {selectedPackage === "business" &&(
+                <IoMdArrowDropright className="absolute right-2 size-6" />
+              )}              
+            </span>
           </label>
 
+          <label className="block items-center text-sm font-medium text-gray-700 mt-2">
+            <input
+              type="radio"
+              value="ecommerce"
+              checked={selectedPackage === "ecommerce"}
+              onChange={handlePackageChange}
+              className="hidden peer"
+            />
+            <span className="relative flex rounded-md items-center gap-2 p-2 border text-sm text-gray-500 peer-checked:text-white peer-checked:bg-ads-secondary peer-checked:border-ads-secondary select-none">
+              <GiShop className="size-6" />
+              Professional E-Commerce
+              {selectedPackage === "ecommerce" &&(
+                <IoMdArrowDropright className="absolute right-2 size-6" />
+              )}
+            </span>
+          </label>
+        </div>           
+
+        <div className="mb-4">
+
         {/* Show input for domain when 'Need Domain' is checked */}
-        {includeSalesSystem && (
-          <>
+        {selectedPackage === "ecommerce" && (
+          <>         
           <div className="my-2 grid gap-1">
           <div className="text-center">รองรับระบบชำระเงินทุกประเภท</div>   
             <div className="flex flex-row justify-center items-center gap-2">
@@ -259,21 +294,28 @@ const PriceCustomizationPopup = ({ isOpen, onClose, onSave }) => {
                 value={domain}
                 onChange={handleDomainInputChange}
                 placeholder="example.com"
-                className={`w-full ${errorMessage && `border-red-600`} p-1 border border-gray-300 rounded-r-xl`}
+                className={`w-full ${needDomain && !domain && `border-red-600`} p-1 border border-gray-300 rounded-r-xl`}
               />
             </div>
-          {errorMessage && <p className="text-red-500 text-xs mt-2">{errorMessage}</p>}
+          {needDomain && !domain && <p className="text-red-500 text-xs mt-2">{errorMessage}</p>}
           </>
         )}
 
-        <div className="mt-4">
-          <p className="text-center text-lg font-semibold">ราคาโดยประมาณ: {formatPrice(price)}</p>
+        <div className="mt-4 text-center">
+          <p className="text-center text-lg font-semibold">ราคาโดยประมาณ</p>
+          <span className="relative text-lg font-bold">{formatPrice(price)}</span>
+          <p className="text-[12px]">ราคายังไม่รวมภาษี</p>
         </div>
 
         <div className="flex justify-end space-x-4">
           <button href="" onClick={handleSave} className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-secondary text-white w-full mt-5">เลือกแพคเกจนี้</button>
           <button href="" onClick={onClose} className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-red-700 text-white w-full mt-5">ยกเลิก</button>
         </div>
+      </div>
+        
+        <div className="col-span-7">
+          test
+        </div>        
       </div>
     </div>
   );
