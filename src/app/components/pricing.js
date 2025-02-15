@@ -137,9 +137,7 @@ export default function Pricing(){
                             <li className="mb-1 flex"><span>- เว็บไซต์รองรับระบบ 2 ภาษา</span></li>
                             <li className="mb-1 flex"><span>- มีระบบหลังบ้านพร้อมใช้งาน</span></li>
                             <li className="mb-1 flex"><span>- พร้อมแบบฟอร์ม (Lead Form)</span></li>
-                            <li className="mb-1 flex"><span>- SEO Research & Settings</span></li>
                             <li className="mb-1 flex"><span>- พร้อมติดตั้ง Analysis tool</span></li>
-                            <li className="mb-1 flex"><span>- พร้อมติดตั้ง <span className="text-red-600">*</span>Analysis tool</span></li>
                             <li className="mb-1 flex"><span>- SEO Research & Setting</span></li>
                             </>
                             )}
