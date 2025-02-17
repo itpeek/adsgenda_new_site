@@ -22,12 +22,9 @@ export default function Services(){
                                 </div>
         
                                 <div className="content flex flex-wrap mt-6 relative z-1">
-                                    <Link href="" className="title text-lg font-semibold hover:text-ads-primary">{item.title}</Link>
+                                    <div href="" className="title text-lg font-semibold hover:text-ads-primary">{item.title}</div>
                                     <p className="text-slate-400 mt-3">{item.desc}</p>
         
-                                    <div className="mt-6">
-                                        <Link href="" className="text-ads-primary">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
-                                    </div>
                                 </div>
         
                                 <div className="absolute bottom-0 -end-16">
