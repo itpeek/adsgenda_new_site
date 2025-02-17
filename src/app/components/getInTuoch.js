@@ -58,7 +58,7 @@ export default function GetInTouch() {
         <div className="grid grid-cols-1 pb-6 text-center">
           <h3 className="font-semibold text-2xl leading-normal mb-4">Get in touch</h3>
           <p className="text-slate-400 max-w-xl mx-auto">
-            This is just a simple text made for this unique and awesome template, you can replace it with any text.
+          เรายินดีรับฟังความคิดเห็นจากคุณ! ไม่ว่าคุณจะมีคำถาม ข้อเสนอแนะ หรือเพียงแค่ต้องการติดต่อ เราพร้อมที่จะช่วยเหลือคุณเสมอ คุณสามารถติดต่อเราผ่านแบบฟอร์มด้านล่าง แล้วเราจะตอบกลับคุณโดยเร็วที่สุด
           </p>
         </div>
 
