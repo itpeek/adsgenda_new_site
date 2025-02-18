@@ -23,10 +23,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className="light scroll-smooth" dir="ltr">
       <body className={`${noto_sans_thai.variable} font-noto_sans_thai text-base text-black dark:text-white bg-white dark:bg-slate-900`}>
         <NavLight/>
-        {children}
+          {children}
         <Footer/>
         <Switcher/>
-        <LineCtaSticky/>        
+        <LineCtaSticky/>
         </body>
     </html>
   );

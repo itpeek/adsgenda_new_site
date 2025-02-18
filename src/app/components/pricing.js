@@ -2,10 +2,19 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import PriceCustomizationPopup from "./PriceCustomizationPopup";
+import ContactForm from "./contactForm";
 
 export default function Pricing(){
     const [isPopupOpen, setIsPopupOpen] = useState(false);
     const [finalPrice, setFinalPrice] = useState(null);
+    const [showContactForm, setShowContactForm] = useState(false); // State to control contact form visibility
+    const [selectedPackage, setSelectedPackage] = useState('');
+  
+    const handleOpenContactForm = (packageName) => {
+      setSelectedPackage(packageName); // Set the selected package
+      setShowContactForm(true); // Show the contact form
+    };    
+
   
     const handleOpenPopup = () => {
       setIsPopupOpen(true);
@@ -18,6 +27,11 @@ export default function Pricing(){
     const handleSavePrice = (customizationDetails) => {
         setFinalPrice(customizationDetails);
       };   
+
+    const handleCloseContactForm = () => {
+        setShowContactForm(false); // Close contact form popup
+    };
+
     return(
         <section className="relative md:py-24 py-16 bg-slate-50 dark:bg-slate-800" id="pricing">
         <div className="container relative">
@@ -41,7 +55,9 @@ export default function Pricing(){
                         <li className="mb-1 flex"><span>- พร้อมติดตั้ง <span className="text-red-600">*</span>{ }Analysis tool</span></li>
                         <li className="mb-1 flex mt-5"><span className="text-[12px] font-medium tracking-normal underline">เหมาะสำหรับเว็บไซต์หน้าเดียว ที่ต้องการเน้นปิดการขาย<span className="text-[#06C755]">ผ่านไลน์</span> หรือช่องทางอื่นๆ</span></li>
                     </ul>
-                    <button className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
+                    <button id="landing"
+                    onClick={() => handleOpenContactForm('Landing Starter')} 
+                    className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
                     <p className="text-sm text-slate-400 mt-3"><span className="text-red-600">*</span>GA4, Facebook Pixel, Tiktok Pixel, หรืออื่นๆ</p>
                 </div>
                 <div className="group relative overflow-hidden shadow dark:shadow-gray-700 bg-white dark:bg-slate-900 rounded-md h-fit">
@@ -63,7 +79,9 @@ export default function Pricing(){
                         <li className="mb-1 flex"><span>- พร้อมติดตั้ง <span className="text-red-600">*</span>{ }Analysis tool</span></li>
                         <li className="mb-1 flex mt-5"><span className="text-[12px] font-medium tracking-normal underline">เหมาะสำหรับเว็บไซต์บริษัท ที่ต้องการต่อยอดการขายด้วยระบบ E-commerce ในอนาคต</span></li>
                         </ul>
-                        <button className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
+                        <button id="business-starter"
+                        onClick={() => handleOpenContactForm('Business Starter')} 
+                        className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
                     </div>
                 </div>                
 
@@ -85,7 +103,9 @@ export default function Pricing(){
                         <li className="mb-1 flex"><span>- พร้อมติดตั้ง Analysis tool</span></li>
                         <li className="mb-1 flex mt-5"><span className="text-[12px] font-medium tracking-normal underline">เหมาะสำหรับเว็บไซต์บริษัท ที่ต้องการต่อยอดการขายด้วยระบบ E-commerce ในอนาคต</span></li>
                     </ul>
-                    <button className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
+                    <button id="professional"
+                    onClick={() => handleOpenContactForm('Professional E-Commerce')} 
+                    className="text-sm h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5">สนใจแพคเกจนี้ / ดูตัวอย่าง</button>
                     <p className="text-sm text-slate-400 mt-3"><span className="text-red-600">*</span>E-Commerce มาพร้อมระบบชำระเงินพร้อมใช้งาน</p>
                 </div>
 
@@ -145,7 +165,7 @@ export default function Pricing(){
                         <button onClick={handleOpenPopup} className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-ads-primary/5 hover:bg-ads-primary text-ads-primary hover:text-white w-full mt-5 text-[12px]">{finalPrice ? ( `ปรับแต่งใหม่` ): ( `ปรับแต่งความต้องการคลิกเลย`)}</button>
                         {finalPrice && (
                             <>
-                        <button className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-[#06C755] text-white w-full mt-2 text-[12px]">เลือกแพคเกจนี้</button>
+                        <button id="custom-plan" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-[#06C755] text-white w-full mt-2 text-[12px]">เลือกแพคเกจนี้</button>
                         <p className="text-sm text-slate-400 mt-3"><span className="text-red-600">*</span><Link href={`/blog/14985`} className="border-b-2 border-dashed">API คืออะไร ?</Link></p>
                             </>
                         )}
@@ -153,6 +173,15 @@ export default function Pricing(){
                 </div>
             </div>
         </div>
+
+            {/* Contact Form Popup */}
+            {showContactForm && (
+                <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50">
+                    <div className="rounded-lg w-96">
+                        <ContactForm onClose={handleCloseContactForm} selectedPackage={selectedPackage} setSelectedPackage={setSelectedPackage} />
+                    </div>
+                </div>
+            )}        
 
         <PriceCustomizationPopup
         isOpen={isPopupOpen}
