@@ -7,7 +7,7 @@ import AgencyTab from "./components/agencyTab";
 import Cta from "./components/cta";
 import Client from "./components/client";
 import Pricing from "./components/pricing";
-import GetInTouch from "./components/getInTuoch";
+import GetInTouch from "./components/getInTouch";
 import BlogPosts from "./data/api/BlogPosts";
 
 export default function IndexSeven(){

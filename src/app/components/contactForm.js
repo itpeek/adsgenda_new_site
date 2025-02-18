@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
+import { IoMdClose } from "react-icons/io";
 
 const ContactForm = ({ onClose,selectedPackage, setSelectedPackage }) => {
   const [formData, setFormData] = useState({
@@ -77,11 +78,11 @@ const ContactForm = ({ onClose,selectedPackage, setSelectedPackage }) => {
   };
 
   return (
-    <div className="bg-gray-100 p-6 rounded-lg">
-      <button onClick={onClose} className="mt-4 bg-red-600 text-white py-2 px-4 rounded">
-          Close
+    <div className="relative bg-gray-100 p-6 rounded-lg">
+
+      <button onClick={onClose} className="absolute right-5 text-black rounded">
+        <IoMdClose className='size-6' />
       </button>      
-      <p className="text-sm font-semibold text-gray-800">I'm interested in...</p>
 
       <div className="space-y-4 max-lg:mt-4">
         <button

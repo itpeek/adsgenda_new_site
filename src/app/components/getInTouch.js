@@ -7,7 +7,7 @@ export default function GetInTouch() {
     name: "",
     email: "",
     subject: "",
-    comments: ""
+    message: ""
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -26,7 +26,7 @@ export default function GetInTouch() {
     setSubmissionStatus(""); // Reset status
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("/api/get-in-touch", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -40,7 +40,7 @@ export default function GetInTouch() {
           name: "",
           email: "",
           subject: "",
-          comments: ""
+          message: ""
         });
       } else {
         throw new Error("Failed to send message.");
@@ -124,15 +124,15 @@ export default function GetInTouch() {
                     </div>
 
                     <div className="lg:col-span-12">
-                      <label htmlFor="comments" className="font-semibold">
+                      <label htmlFor="message" className="font-semibold">
                         Your Comment:
                       </label>
                       <textarea
-                        name="comments"
-                        id="comments"
+                        name="message"
+                        id="message"
                         className="mt-2 w-full py-2 px-3 h-28 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0"
                         placeholder="Message :"
-                        value={formData.comments}
+                        value={formData.message}
                         onChange={handleInputChange}
                       ></textarea>
                     </div>
