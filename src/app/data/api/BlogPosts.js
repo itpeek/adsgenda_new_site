@@ -35,14 +35,16 @@ export default function BlogPosts() {
             <div className="group relative overflow-hidden" key={item.id}>
               <div className="relative overflow-hidden rounded-md shadow dark:shadow-gray-800">
                 {item._embedded?.["wp:featuredmedia"]?.[0]?.source_url && (
-                  <Image
-                    src={item._embedded["wp:featuredmedia"][0].source_url}
-                    alt={item.title.rendered}
-                    width={400}
-                    height={210}
-                    style={{ width: "100%", height: "auto" }}
-                    className="group-hover:scale-110 duration-500"
-                  />
+                  <Link href={`/blog/${item.id}`}>
+                    <Image
+                      src={item._embedded["wp:featuredmedia"][0].source_url}
+                      alt={item.title.rendered}
+                      width={400}
+                      height={210}
+                      style={{ width: "100%", height: "auto" }}
+                      className="group-hover:scale-110 duration-500"
+                    />                  
+                  </Link>
                 )}
               </div>
 
