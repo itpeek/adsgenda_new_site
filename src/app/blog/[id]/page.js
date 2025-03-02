@@ -9,8 +9,10 @@ async function getPost(id) {
 }
 
 export default async function SinglePost({ params }) {
-  const post = await getPost(params.id);
-  const featuredImage = post._embedded?.["wp:featuredmedia"]?.[0]?.source_url || "";
+  const { id } = await params;
+  const post = await getPost(id);
+  const featuredMedia = post._embedded?.['wp:featuredmedia']?.[0];
+  const imageUrl = featuredMedia?.source_url;
 
   // Remove class attributes while keeping <p> and <h*> tags intact.
   const titleHtml = removeClassAttributes(post.title.rendered);
@@ -20,7 +22,7 @@ export default async function SinglePost({ params }) {
     <div>
       <div
         className="relative h-[60vh] bg-cover bg-center bg-no-repeat after:absolute after:bg-black/70 after:top-0 after:bottom-0 after:left-0 after:right-0"
-        style={{ backgroundImage: `url(${featuredImage})` }}
+        style={{ backgroundImage: `url(${imageUrl})` }}
       />
 
       <div className="container mx-auto py-12">
