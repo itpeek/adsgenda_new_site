@@ -52,7 +52,7 @@ export default function AgencyTab(){
                                     <h5 className="text-lg font-medium">Meeting Session</h5>
                                     <p className="text-slate-400 mt-4">ในขั้นตอนนี้ เราจะจัดการประชุมเพื่อลงรายละเอียดเกี่ยวกับสิ่งที่คุณต้องการ เราพร้อมรับฟังทุกข้อเสนอแนะและข้อกังวลของคุณ เพื่อให้เราเข้าใจอย่างถ่องแท้และสามารถแนะนำแนวทางที่ดีที่สุดได้ การประชุมนี้ช่วยให้เราเริ่มต้นได้อย่างมั่นใจและตรงกับสิ่งที่คุณคาดหวัง</p>
                                     <div className="mt-4">
-                                        <Link href="" className="text-teal-500">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
+                                        <LineCta text="ติดต่อเรา" fontSize="text-xl" />
                                     </div>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ export default function AgencyTab(){
                                     <h5 className="text-lg font-medium">Customized Proposal</h5>
                                     <p className="text-slate-400 mt-4">หลังจากที่เราเข้าใจสิ่งที่คุณต้องการแล้ว ทีมงานจะทำการสรุปแผนงานที่เหมาะสมกับความต้องการและเป้าหมายของคุณอย่างละเอียด เราจะเสนอโซลูชันที่ไม่เพียงแต่ตรงกับความต้องการของคุณ แต่ยังเพิ่มมูลค่าให้กับโครงการของคุณด้วยการนำเสนองานที่มีความคิดสร้างสรรค์และเฉพาะตัว</p>
                                     <div className="mt-4">
-                                        <Link href="" className="text-teal-500">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
+                                        <LineCta text="ติดต่อเรา" fontSize="text-xl" />
                                     </div>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@ export default function AgencyTab(){
                                     <h5 className="text-lg font-medium">Start Your Project</h5>
                                     <p className="text-slate-400 mt-4">เมื่อทุกอย่างชัดเจนและคุณพอใจกับแผนงานที่เรานำเสนอแล้ว ขั้นตอนสุดท้ายคือการชำระเงินเพื่อเริ่มงาน เราจะเริ่มต้นทำงานทันทีที่ได้รับการยืนยันจากคุณ โดยเราจะรักษาความโปร่งใสในกระบวนการทั้งหมดและอัพเดตความคืบหน้าให้คุณทราบอย่างต่อเนื่อง</p>
                                     <div className="mt-4">
-                                        <Link href="" className="text-teal-500">Read More <i className="mdi mdi-chevron-right align-middle"></i></Link>
+                                        <LineCta text="ติดต่อเรา" fontSize="text-xl" />
                                     </div>
                                 </div>
                             </div>
