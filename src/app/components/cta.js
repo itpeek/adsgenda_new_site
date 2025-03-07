@@ -47,7 +47,7 @@ export default function Cta(){
                                     <div className="mt-8">
                                         <div className="section-title text-md-start">
                                             <p className="text-white/70 max-w-xl mx-auto mb-2">ให้ธุรกิจของคุณเติบโตอย่างมั่นคง รวดเร็ว ทันสมัย ตามทันยุคใหม่ ให้บริการด้วยทีมงานมืออาชีพประสบการณ์มากกว่า 17 ปี</p>
-                                            <LineCta href="https://line.me" text="ร่วมงานกับเรา" fontSize="text-xl" />
+                                            <LineCta text="ร่วมงานกับเรา" fontSize="text-xl" />
                                         </div>
                                     </div>
                                 </div>
