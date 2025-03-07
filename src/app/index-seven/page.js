@@ -12,7 +12,7 @@ import Blogs from "../components/blog";
 import GetInTouch from "../components/getInTouch";
 import Footer from "../components/footer";
 import Switcher from "../components/switcher";
-import lineCtaSticky from "../components/lineCtaSticky";
+import LineCtaSticky from "../components/lineCtaSticky";
 
 export default function Home() {
   return (
@@ -60,7 +60,7 @@ export default function Home() {
 
     <Switcher/>
 
-    <lineCtaSticky href="https://line.me/R/ti/p/@352tegsj" text="ติดต่อเรา" fontSize="text-xl" />
+    <LineCtaSticky href="https://line.me/R/ti/p/@352tegsj" text="ติดต่อเรา" fontSize="text-xl" />
     
     </>
   );
