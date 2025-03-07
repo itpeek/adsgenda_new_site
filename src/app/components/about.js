@@ -31,7 +31,7 @@ export default function About(){
                             <h3 className="font-semibold text-xl leading-normal mb-4">We're a Digital Masters <br/> Your One-Stop Digital Solution</h3>
 
                             <p className="text-slate-400 max-w-xl mb-6">We provide expert services to build, grow, and elevate your digital presence. From design and development to strategic marketing, we deliver tailored solutions to meet all your digital needs.</p>
-                            <LineCta text="ติดต่อเรา" fontSize="text-xl" />
+                            <LineCta href text="ติดต่อเรา" fontSize="text-xl" />
                         </div>
                     </div>
                 </div>
