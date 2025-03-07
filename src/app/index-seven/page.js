@@ -60,7 +60,7 @@ export default function Home() {
 
     <Switcher/>
 
-    <lineCtaSticky href="https://line.me" text="ติดต่อเรา" fontSize="text-xl" />
+    <lineCtaSticky href="https://line.me/R/ti/p/@352tegsj" text="ติดต่อเรา" fontSize="text-xl" />
     
     </>
   );
