@@ -45,7 +45,7 @@ export default function HeroCarousel(){
                                     </h2>
                                     
                                     <div className="mt-6">
-                                        <LineCta href="https://line.me" text="ติดต่อเรา" fontSize="text-xl" />
+                                        <LineCta text="ติดต่อเรา" fontSize="text-xl" />
                                     </div>
                                 </div>                        
                             </div>
