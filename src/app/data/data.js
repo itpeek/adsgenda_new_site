@@ -3,8 +3,8 @@ import { FiCommand, FiBox, CgWebsite, FiBell, FiMonitor, BsCameraReels, GoGoal ,
 export const servicesData = [
     {
         icon:GoGoal,
-        title:'Event Activity & Booth Exhibition',
-        desc:'การจัดกิจกรรมและบูธแสดงสินค้า ที่มุ่งเน้นสร้างความน่าสนใจ ดึงดูดกลุ่มเป้าหมาย พร้อมทั้งสื่อสารและสร้างการจดจำแบรนด์ได้อย่างมีประสิทธิภาพ'
+        title:'Google Ads SEO/SEM',
+        desc:'Google Ads SEO/SEM คือกลยุทธ์การทำโฆษณาออนไลน์ผ่าน Google Ads (SEM) และการเพิ่มประสิทธิภาพเว็บไซต์ให้ติดอันดับการค้นหา (SEO) เพื่อเพิ่มโอกาสเข้าถึงลูกค้าเป้าหมายอย่างมีประสิทธิภาพ ช่วยให้ธุรกิจของคุณได้รับการมองเห็นสูงสุดบน Google ทั้งแบบโฆษณาชำระเงินและแบบออร์แกนิก'
     },
     {
         icon:BsCameraReels,
