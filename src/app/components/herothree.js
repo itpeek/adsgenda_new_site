@@ -19,7 +19,6 @@ export default function HeroThree(){
             <div className="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 items-center mt-6 gap-6 relative">
                 <div className="lg:col-span-7 md:me-6">
                     <h4 className="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl mb-5">Revolutionizing Your <span className="text-teal-500 font-bold">Business</span> with Upcover</h4>
-                    <p className="text-slate-400 text-lg max-w-xl">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
                 
                     <div className="relative mt-6 space-x-1">
                         <Link href="" className="h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Get Started</Link>
