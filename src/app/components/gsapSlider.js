@@ -66,7 +66,7 @@ const GsapSlider = () => {
 
   return (
 <div className="h-[950px] relative w-full mx-auto overflow-hidden">
-    <div className="relative pt-[100px] pb-6 z-3 text-center">                                
+    <div className="relative pt-[120px] pb-6 z-3 text-center">                                
     <h1 className="font-bold lg:leading-none leading-normal tracking-wide text-4xl lg:text-[35px] capitalize text-white">บริหารธุรกิจของคุณด้วยมือถือเครื่องเดียว</h1>
     <p className="pt-4 text-lg text-white">รับทำเว็บไซต์ ออกแบบเว็บไซต์ ใช้งานง่าย ในมือถือ หน้าบ้านสวย หลังบ้านใช้งานง่าย</p>
     <h2 className="pt-6 lg:leading-none leading-none tracking-wide text-4xl lg:text-5xl capitalize text-white">
@@ -122,7 +122,7 @@ const GsapSlider = () => {
                     เริ่มต้นสร้างเว็บไซต์ของคุณ
                 </Link>
             </div>
-              <div className="relative">
+              <div className="overflow-hidden relative">
                 <img className="overflow-hidden relative lg:w-[711px] lg:h-[500px] z-2" src="/images/bg/imac-mockup.png" />
                 <img
                   ref={index === currentIndex ? screenRef : null}
