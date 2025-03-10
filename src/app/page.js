@@ -9,11 +9,12 @@ import Client from "./components/client";
 import Pricing from "./components/pricing";
 import GetInTouch from "./components/getInTouch";
 import BlogPosts from "./data/api/BlogPosts";
+import GsapSlider from "./components/gsapSlider";
 
 export default function IndexSeven(){
     return(
         <>
-            <HeroCarousel/>
+            <GsapSlider/>
             <About/>
             <Services/>
             <AgencyTab/>

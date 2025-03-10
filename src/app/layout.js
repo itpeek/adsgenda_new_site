@@ -10,7 +10,7 @@ import { GoogleTagManager } from '@next/third-parties/google'
 
 const noto_sans_thai = Noto_Sans_Thai({
    subsets : ['thai'],
-   weight: ['400', '700','300','500','600','700'],
+   weight: ['400','300','500','600','700'],
    display: "swap",   
    variable: '--font-noto_sans_thai',
    });

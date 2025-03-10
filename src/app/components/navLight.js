@@ -25,7 +25,7 @@ export default function NavLight(){
     return(
         <>
         <div id="navbar">
-            <div className="topbar absolute top-0 left-0 right-0 z-10 bg-ads-primary dark:bg-slate-900 transition-all duration-500">
+            {/* <div className="topbar absolute top-0 left-0 right-0 z-10 bg-ads-primary dark:bg-slate-900 transition-all duration-500">
                 <div className="container max-h-36px lg:min-h-[36px] relative flex flex-wrap items-center justify-between">
                     <ul className="lg:col-span-4 list-none md:text-end text-center md:mt-0 space-x-1 ">
                         <li className="inline"><Link href="https://www.facebook.com/adsgenda/" target="_blank" className="text-xs size-9 inline-flex justify-center items-center "><FaFacebook className="text-white size-4 align-middle" title="facebook" /></Link></li>
@@ -33,8 +33,8 @@ export default function NavLight(){
                         <li className="inline"><Link href="mailto:webmaster@adsgenda.com" target="_blank" className="text-xs size-9 inline-flex justify-center items-center "><FiMail className="text-white size-4 align-middle" title="email"/></Link></li>
                     </ul>
                 </div>
-            </div>
-            <nav className={`navbar ${scroll ? 'is-sticky fixed' : 'absolute lg:bg-transparent bg-white mt-[36px]'}`}>
+            </div> */}
+            <nav className={`navbar ${scroll ? 'is-sticky fixed' : 'absolute lg:bg-transparent bg-white'}`}>
                 <div className="container relative flex flex-wrap items-center justify-between">
                     <Link className="navbar-brand md:me-8" href="/">
                         <span className="inline-block dark:hidden">
