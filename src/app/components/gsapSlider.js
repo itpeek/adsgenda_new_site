@@ -91,19 +91,19 @@ const GsapSlider = () => {
             <div key={index}>
         <div className="absolute left-0 right-0 h-full w-full grid grid-cols-12 gap-[30px] m-auto">            
           <div
-            className={`z-2 absolute w-full h-full grid grid-cols-12 px-36 gap-[30px] ${
+            className={`z-2 absolute w-full h-full grid grid-cols-12 lg:px-36 gap-[30px] ${
               index === currentIndex ? "block" : "hidden"
             }`}
           >
             {/* กลุ่มภาพด้านซ้าย */}
-            <div className="col-span-7 flex flex-wrap gap-[60px]">
+            <div className="hidden col-span-7 lg:flex flex-wrap gap-[60px]">
               <div className="flex items-end">
                 <img
                   ref={index === currentIndex ? leftTopRef : null}
                   src={slide.leftTop}
                 />
               </div>
-              <div className="flex items-start mt-[60px]">
+              <div className="hidden lg:flex items-start mt-[60px]">
                 <img
                   ref={index === currentIndex ? leftBottomRef : null}
                   src={slide.leftBottom}
@@ -112,24 +112,33 @@ const GsapSlider = () => {
             </div>
 
             {/* iMac Mockup */}
-            <div className="relative col-span-5 flex flex-wrap justify-center"> 
-            <div className="flex  flex-col gap-[30px] items-center justify-center mt-6 mb-0">
-            <h2 className="text-[42px] text-white"><small>เริ่มต้นเพียง</small> 15,000 <small>บาท</small></h2>
-            <Link
-            href={"https://line.me/R/ti/p/@352tegsj"}
-            target="_blank"
-            className={`gap-1 h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-[#1F806E] text-white`} >
-                เริ่มต้นสร้างเว็บไซต์ของคุณ
-            </Link>
-        </div>
-              <div className="relative overflow-hidden">
-                <img className="relative w-[711px] h-[500px] z-2" src="/images/bg/imac-mockup.png" />
+            <div className="relative col-span-12 lg:col-span-5 flex flex-wrap justify-center"> 
+            <div className="hidden lg:flex flex-col gap-[30px] items-center justify-center mt-6 mb-0">
+                <h2 className="text-[42px] text-white"><small>เริ่มต้นเพียง</small> 15,000 <small>บาท</small></h2>
+                <Link
+                href={"https://line.me/R/ti/p/@352tegsj"}
+                target="_blank"
+                className={`gap-1 h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-[#1F806E] text-white`} >
+                    เริ่มต้นสร้างเว็บไซต์ของคุณ
+                </Link>
+            </div>
+              <div className="relative">
+                <img className="overflow-hidden relative lg:w-[711px] lg:h-[500px] z-2" src="/images/bg/imac-mockup.png" />
                 <img
                   ref={index === currentIndex ? screenRef : null}
-                  className="absolute top-0 h-[380px] p-4 z-1"
+                  className="absolute top-0 lg:h-[380px] p-2 lg:p-4 z-1"
                   src={slide.screen}
                 />
-              </div>
+              <div className="lg:hidden text-center flex-col gap-[30px] items-center justify-center mt-6 mb-0">
+                <h2 className="text-[36px] lg:text-[42px] my-6 mt-12 text-white"><small>เริ่มต้นเพียง</small> 15,000 <small>บาท</small></h2>
+                <Link
+                href={"https://line.me/R/ti/p/@352tegsj"}
+                target="_blank"
+                className={`gap-1 h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-[#1F806E] text-white`} >
+                    เริ่มต้นสร้างเว็บไซต์ของคุณ
+                </Link>
+            </div>                 
+              </div>             
             </div>
           </div>
           </div>

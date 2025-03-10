@@ -6,7 +6,7 @@ export default function LineCtaSticky({ href, text = "ติดต่อเร�
     <Link
     href={href || "https://line.me/R/ti/p/@352tegsj"}
     target="_blank"
-    className='fixed z-1 bottom-0 left-0 right-0 lg_992:hidden'>    
+    className='fixed z-10 bottom-0 left-0 right-0 lg_992:hidden'>    
         <div className={`w-full gap-1 h-10 px-6 tracking-wide inline-flex items-center justify-center font-medium bg-[#06C755] text-white`}>
                 <FaLine className={`${fontSize}`} />
                 {text}
